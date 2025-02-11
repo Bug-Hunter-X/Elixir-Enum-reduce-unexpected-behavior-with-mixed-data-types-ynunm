@@ -1,0 +1,3 @@
+# Elixir Enum.reduce Unexpected Behavior with Mixed Data Types
+
+This repository demonstrates a potential issue with using `Enum.reduce` in Elixir when dealing with lists containing mixed data types. The code attempts to sum numbers greater than 3, but fails when non-numeric elements are encountered. This is because the `+` operator cannot handle atoms or strings in this context. The solution involves robust type checking to handle potential data type mismatches.
